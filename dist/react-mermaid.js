@@ -14,11 +14,13 @@ var _mermaid = require('mermaid');
 
 var _mermaid2 = _interopRequireDefault(_mermaid);
 
+var PropTypes = require('prop-types');
+
 var Mermaid = _react2['default'].createClass({
   displayName: 'Mermaid',
 
   propTypes: {
-    name: _react2['default'].PropTypes.string
+    name: PropTypes.string
   },
 
   getDefaultProps: function getDefaultProps() {
