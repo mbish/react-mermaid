@@ -20,7 +20,7 @@ const Mermaid = React.createClass({
   },
 
   componentDidMount () {
-    mermaidAPI.render(this.props.name, this.props.children.toString(), (html) => this.setState({diagram: html}));
+    mermaidAPI.render(this.props.name, this.props.children.join(' ').toString(), (html) => this.setState({diagram: html}));
   },
 
   render () {
