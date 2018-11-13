@@ -49,6 +49,10 @@ var Mermaid = createReactClass({
       });
     }
 
+    if(_this.props.onReady) {
+      window.setTimeout(_this.props.onReady, 300);
+    }
+
   },
 
   render: function render() {
