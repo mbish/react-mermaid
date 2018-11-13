@@ -40,7 +40,7 @@ var Mermaid = createReactClass({
   componentDidMount: function componentDidMount() {
     var _this = this;
 
-    _mermaid.mermaidAPI.render(this.props.name, this.props.children.toString(), function (html) {
+    _mermaid.mermaidAPI.render(this.props.name, this.props.children.join(' ').toString(), function (html) {
       return _this.setState({ diagram: html });
     });
   },
