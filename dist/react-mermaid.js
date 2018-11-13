@@ -16,6 +16,8 @@ var _mermaid2 = _interopRequireDefault(_mermaid);
 
 var PropTypes = require('prop-types');
 
+var createReactClass = require('create-react-class');
+
 var Mermaid = _react2['default'].createClass({
   displayName: 'Mermaid',
 
